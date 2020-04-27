@@ -1,0 +1,115 @@
+$gray: #f2f2f2;
+$grey2:#dcdcdc;
+$grey3:#a7b3b3;
+$black:#000;
+$white:#fff;
+$green:#5cb204;
+$green2:#6bd400;
+
+.mdl-demo{
+  .mdl-layout__tab-panel{
+    &.form{
+      background-color: $gray !important;
+     
+      .person, .payments{
+        color: $black;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .person{
+        &::before{
+          content: '1';
+          position: absolute;
+          background: $black;
+          left: -37px;
+          color: $white;
+          padding: 1px 10px;
+          border-radius: 50%;
+          font-size: 0.85rem;
+        }
+      }
+      .payments{
+        &::before{
+          content: '2';
+          position: absolute;
+          background: $black;
+          left: -37px;
+          color: $white;
+          padding: 1px 10px;
+          border-radius: 50%;
+          font-size: 0.85rem;
+        }
+      }
+     }
+     .first{
+      padding-right: 20px;
+      .filds{
+        margin: 5px;
+        padding: 7px 0;
+        input, select{
+          background: $white;
+          box-shadow: 0px 2px $grey2;
+          border-radius: 3px;
+          padding: 20px 5px 11px;
+          color: $grey3;
+          box-sizing: border-box;
+          &.credit{
+            background-image: url(../images/touch/visa.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+          }
+        }
+        label{
+          padding-left: 5px;
+          color: #333;
+          font-size:12px;
+          top:4px;
+          &::after{
+            margin-left: -6px;
+            bottom: 10px;
+          }
+        }
+        
+       }
+       #send{
+        padding: 10px 0;
+        text-transform: uppercase;
+        box-shadow: 0px 1px 0px 0px $green;
+        background: $green2;
+        color: $white;
+        font-weight: bold;
+        &:hover{
+          filter: opacity(0.8);
+        }
+      }
+     }
+     .second{
+       
+       .inner{
+        border: 1px dotted #333;
+        background: #fff;
+        box-shadow: 0px 0px 0px 8px $white;
+        padding: 8px;
+        max-width: 260px;
+        p{
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        .price{
+          text-align: right;
+        }
+        .mdl-textfield--floating-label{
+          padding: 10px 0;
+        }
+       }
+     }
+     
+  }
+  .error{
+    border: 1px solid red;
+  }
+}
+
+
+

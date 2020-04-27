@@ -1,0 +1,106 @@
+.mdl-demo .mdl-layout__tab-panel.form {
+  background-color: #f2f2f2 !important;
+}
+
+.mdl-demo .mdl-layout__tab-panel.form .person, .mdl-demo .mdl-layout__tab-panel.form .payments {
+  color: #000;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.mdl-demo .mdl-layout__tab-panel.form .person::before {
+  content: '1';
+  position: absolute;
+  background: #000;
+  left: -37px;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+}
+
+.mdl-demo .mdl-layout__tab-panel.form .payments::before {
+  content: '2';
+  position: absolute;
+  background: #000;
+  left: -37px;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first {
+  padding-right: 20px;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first .filds {
+  margin: 5px;
+  padding: 7px 0;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first .filds input, .mdl-demo .mdl-layout__tab-panel .first .filds select {
+  background: #fff;
+  box-shadow: 0px 2px #dcdcdc;
+  border-radius: 3px;
+  padding: 20px 5px 11px;
+  color: #a7b3b3;
+  box-sizing: border-box;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first .filds input.credit, .mdl-demo .mdl-layout__tab-panel .first .filds select.credit {
+  background-image: url(../images/touch/visa.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first .filds label {
+  padding-left: 5px;
+  color: #333;
+  font-size: 12px;
+  top: 4px;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first .filds label::after {
+  margin-left: -6px;
+  bottom: 10px;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first #send {
+  padding: 10px 0;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 0px 0px #5cb204;
+  background: #6bd400;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mdl-demo .mdl-layout__tab-panel .first #send:hover {
+  filter: opacity(0.8);
+}
+
+.mdl-demo .mdl-layout__tab-panel .second .inner {
+  border: 1px dotted #333;
+  background: #fff;
+  box-shadow: 0px 0px 0px 8px #fff;
+  padding: 8px;
+  max-width: 260px;
+}
+
+.mdl-demo .mdl-layout__tab-panel .second .inner p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mdl-demo .mdl-layout__tab-panel .second .inner .price {
+  text-align: right;
+}
+
+.mdl-demo .mdl-layout__tab-panel .second .inner .mdl-textfield--floating-label {
+  padding: 10px 0;
+}
+
+.mdl-demo .error {
+  border: 1px solid red;
+}
